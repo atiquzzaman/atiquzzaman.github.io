@@ -1,0 +1,16 @@
+---
+export interface ISkill {
+    title: string
+    items: string[]
+}
+const { responsive = true} = Astro.props
+const { skill } = Astro.props as Record<string, ISkill>
+
+const { title, items } = skill
+---
+<div class={`mb-6 ${responsive ? "text-center sm:text-left" : "text-left"}`}>
+    <h2 class="text-skin-accent mb-2 text-xl">{title}</h2>
+    <ul>
+        {items.map((item: string) => <li>{item}</li>)}
+    </ul>
+</div>

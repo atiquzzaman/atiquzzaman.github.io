@@ -1,0 +1,20 @@
+---
+import Socials from "@components/Socials.astro";
+
+const { name, designation, company } = Astro.props;
+---
+<div id="banner" class="flex flex-wrap justify-center items-center sm:justify-between pt-4 sm:pt-8">
+    <div class="text-center sm:text-left">
+        <div class="text-xl sm:text-2xl mb-2">Hello 👋</div>
+        <div class="text-3xl sm:text-5xl font-bold mb-1">I am {name}</div>
+        <div class="sm:text-lg text-skin-accent">{designation} @ {company}</div>
+        <div class="mt-3 pb-6 sm:pb-0 sm:mt-12">
+            <Socials />
+        </div>
+    </div>
+    <img
+        class="w-40 border-none sm:w-52"
+        alt="Atiquzzaman"
+        src="/assets/profile.webp"
+    />
+</div>

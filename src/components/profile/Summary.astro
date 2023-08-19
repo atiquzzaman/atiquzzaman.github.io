@@ -1,0 +1,12 @@
+---
+import getTotalExperiences from "@utils/getTotalExperiences";
+
+const { summary = "" } = Astro.props
+const totalExperiences = getTotalExperiences()
+    
+const fomrattedSummary = summary.replace('{{ totalExperience }}', totalExperiences)
+---
+
+<p class="max-w-3xl m-auto text-center sm:text-left">
+    {fomrattedSummary}
+</p>

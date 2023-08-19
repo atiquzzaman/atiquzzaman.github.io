@@ -1,0 +1,174 @@
+---
+name: Atiquzzaman
+designation: Lead Software Engineer
+company: DSi
+summary: >
+  With {{ totalExperience }} years of hands-on experience, I am a polyglot software engineer 
+  specializing in microservice architecture, distributed systems, and the 
+  web stack. My technical leadership, mentorship, and management skills 
+  have driven cross-functional teams to achieve exceptional results. 
+  Passionate about innovation, I continuously explore emerging technologies 
+  to deliver cutting-edge solutions. Committed to developing secure and 
+  user-centric software products that consistently exceed industry standards.
+contact:
+  phone: "+8801713185050"
+  email: atiquzzaman@gmail.com
+  location: Dhaka, Bangladesh
+social:
+  web: 
+    alt: atiquzzaman.github.io
+    url: https://atiquzzaman.github.io
+  github:
+    alt: atiquzzaman
+    url: https://github.com/atiquzzaman
+  linkedin:
+    alt: atiquzzaman-nayeem
+    url: https://linkedin.com/in/atiquzzaman-nayeem
+skills:
+  - title: Expertise
+    items:
+      - eGovernance
+      - Healthtech
+      - Edtech
+      - Fintech
+      - Digital Public Goods
+  - title: Languages
+    items:
+      - Java
+      - JavaScript
+      - Python
+  - title: Tools & Technologies
+    items:
+      - Spring, JPA, Hibernate, Thymeleaf, JSP,
+      - Jakarta EE, JSF, Primefaces
+      - NodeJs, NestJs, HapiJS
+      - ExpressJs, NextJS, Vite
+      - React, Vue
+      - Microservice Architecture, Distributed System
+      - Github Action, Gitlab CI/CD, CircleCI
+      - Docker, Kubernetes, Helm, Ansible
+      - PostgreSQL, MongoDB, ELK stack, Metabase
+      - REST, GraphQL
+
+experiences:
+  - title: Lead Software Engineer
+    company: DSi
+    location: Dhaka, Bangladesh
+    from: September 2014
+    till: Present
+    responsibilities:
+      - Lead development teams to produce quality software.
+      - Managed multiple projects concurrently, ensuring timely delivery of various software solutions.
+      - Wrote technical responses to RFPs for several eGovernace projects.
+      - Conducted regular code reviews, identifying areas for optimization and mentoring team members for professional growth.
+      - Collaborated with designers, developers and QA engineers to ensure seamless integration of UI/UX elements and functionalities into the final product.
+      - Participated in design and architecture discussions, contributing valuable insights that improved scalability and performance.
+      - Communicated with clients/stakeholders to gather requirements, provide project updates, and address any concerns.
+      - Took interviews and identify right talents for the company.
+    projects:
+      - name: Synopsys Detect, 6 Months
+        client: Synopsys, USA
+        brief: >
+          Synopsys Detect is a CLI software composition analysis (SCA) tool for 
+          scanning source codes for security vulnerabilities, quality, and license 
+          compliance risks associated with open-source and third-party codes in 
+          applications and containers.
+        responsibilities:
+          - Developed features based on requirements and fixed system bugs.
+          - Proposed a comprehensive migration plan from the current Jenkins CI/CD pipeline to GitHub Actions.
+          - Worked with package managers like Gradle, Maven NPM, Yarn, Pip, Pub, DPKG, APT, NuGet etc.
+
+      - name: Health Data Architecture (HDA), 11 Months
+        client: a2i, Bangladesh
+        brief: >
+          HDA is a conceptual project for centralizing EHR to exchange health information among different providers and facilities.
+        responsibilities:
+          - Worked in designing nationwide architecture for Health Information Exchange (HIE), data warehouse, interoperability and analytics.
+          - Refactored the existing Shared Health Record (SHR) to make it functional as a proof of concept (POC).
+          - Designed the interoperability platform for exchanging information with different systems using OpenHIM.
+          - Integrated with OpenMRS, DHIS2, OpenSRP.
+          - Implemented HL7 FHIR standard to store patient health records.
+          - Worked closely with current vendors and stackholders.
+
+      - name: OpenCRVS, 4 years
+        client: Legacy Digital
+        brief: >
+          Open Civil Registration and Vital Statistics (OpenCRVS) is a World Health Organization 
+          classified global good open-source product supporting the digitization of civil 
+          registration and vital statistics (CRVS) for all country contexts. 
+        responsibilities:
+          - Contributed to the technical design of country-specific configuration that has custom form, multilingual support, defining workflows, policies and many more.
+          - Uses tools like Docker, Hapi, Apollo, GraphQL, React.js, TypeScript, FHIR standard, MongoDB, ELK, OpenHIM, Jest, Codecov, GitHub Actions.
+          - Implementation of PWA architecture, standards-based (HL7) interoperability framework.
+      
+      - name: Loan and Asset Management Tool (LAMT), 11 Months
+        client: Altech, Congo
+        brief: >
+          LAMT is a fintech micro-loan and account management tool that manages the clean 
+          energy assets of Altech and their ongoing loans. It was initially developed by 
+          Enable.digital following microservice architecture based on AWS infrastructure.
+        responsibilities:
+          - Lead the team to develop BI Dashboard using Metabase. Designed the event-driven pub/sub model to collect data feeds for the BI dashboard.
+          - Worked with a diverse technology stack - Java. Spring Framework, NestJs, ReactJs, VueJs, Express.js, AWS, Lambda, Docker, PostgreSQL, MongoDB, Mongoose, Github, Github Action.
+          - Refactored the Spring Framework-based backend API Services to Javascript/Nest.js based microservices.
+          - Integration with Xero (Accounting management), Unleashed (Inventory management), and Angaza (Sales and Payment management) 
+          - Integration with M-PESA, Orange, Airtel and Vodacom payment providers.
+ 
+      - name: Recenseo, 2.5 Years
+        client: Consolio, USA
+        brief: >
+          Recenseo is an AI-enabled document management and review system designed for 
+          contract attorneys and paralegals in the United States. The solution is used 
+          by AMLAW 100 Firms, Fortune 50 Companies and eDiscovery Service Providers.
+        responsibilities:
+          - Lead the offshore engineering team.
+          - Helped the client to restructure the development process using Agile, SCRUM, Confluence, Bitbucket, Jira.
+          - Redesigned legacy document history (archive) and migrated data.
+          - Architected and developed a generic report framework for backend and frontend.
+          - Developed a dashboard gadget tool. Any report could be exposed as a gadget using this tool.
+          - Converted old container based authentication system to Spring Security, introduced two factor authentication. Also proposed a refined architecture for authorization systems.
+          - Developed an internal project management application using Spring, Hibernate.
+
+
+  - title: System Engineer
+    company: Vizrt Sweden
+    location: Kista, Sweden
+    from: April 2013
+    till: August 2014
+    brief: >
+      Vizrt is the world's leading provider of innovative visual storytelling tools for 
+      media content creators in broadcast, enterprise, or new media - unlocking the power of a story for all. 
+    responsibilities:
+      - Developed different features
+      - Reproduced and fixed bugs reported by client
+      - Provided Tier 2 and 3 support to client
+
+  - title: Software Engineer
+    company: Vizrt Bangladesh
+    location: Dhaka, Bangladesh
+    from: May 2010
+    till: March 2013
+    brief: >
+      The Escenic Content Engine is a platform for building large, sophisticated websites. 
+      It provides editorial staff with a streamlined production environment in which they 
+      can concentrate on the production, editing and publishing of content within a predefined website structure.
+    responsibilities:
+      - Lead the professional services team
+      - Customized product based on client requirement
+      - Provided Tier 2 and 3 support to the client
+  
+  - title: Senior Software Engineer
+    company: Therap Services
+    location: Dhaka, Bangladesh
+    from: February 2005
+    till: April 2010
+    brief: >
+      Therap is the national leader in the USA in providing electronic health record 
+      solutions for the Developmental Disability industry. The Therap application is 
+      a CoTS/SaaS product, covering all aspects of taking care of people with disabilities.
+    responsibilities:
+      - Contributed to developing different features
+      - Analyzed production log, and database log to find out the system bottleneck
+      - Contributed to improving product quality
+
+  

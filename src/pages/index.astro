@@ -1,0 +1,30 @@
+---
+import HomeLayout from "@layouts/HomeLayout.astro";
+import Summary from "@components/profile/Summary.astro";
+import Banner from "@components/home/Banner.astro";
+import Skill, { ISkill } from "@components/profile/Skill.astro";
+import { getCollection } from "astro:content";
+
+const profile = await getCollection("profile");
+
+const {summary, name, designation, company, skills} = profile[0].data;
+---
+
+<HomeLayout>
+  <section>
+    <Banner name={name} designation={designation} company={company}/>
+  </section>
+  <section class="pb-6 pt-8 bg-skin-intro max-w-full">
+    <Summary summary={summary}/>
+  </section>
+  <section class="pb-6 pt-8 max-w-full">
+    <div class="my-2 max-w-3xl m-auto flex flex-col sm:flex-row justify-center sm:justify-between">
+      {skills.map((skill: ISkill) => <Skill skill={skill} />)}
+    </div>
+  </section>
+  <section class="text-center max-w-full">
+    <a href="/resume#experiences" id="btn" class="p-4 py-3 hover:text-skin-accent border-skin-card hover:border-skin-accent border rounded-full">
+      See my experiences details
+    </a>
+  </section>
+</HomeLayout>

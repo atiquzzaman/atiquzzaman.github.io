@@ -1,0 +1,37 @@
+---
+import Icon from "astro-icon";
+import Projects from "./Projects.astro";
+
+const { exp } = Astro.props
+
+const { title, company, location, responsibilities, brief, projects, project } = exp
+---
+<div class="mb-8">
+    {title && 
+    <div class="flex flex-col sm:flex-row justify-between items-baseline">
+        <div>
+            <div><span class="text-xm sm:text-2xl">{title}</span>, <span class="text-skin-accent">{company}</span></div>
+            <!-- <div>{location}</div> -->
+        </div>
+        <div class="text-skin-accent">{exp.from} - {exp.till}</div>
+    </div>
+  }
+    {brief && <p class="py-2">{brief}</p>}
+    {
+      responsibilities &&
+    <div class="font-bold text-skin-accent mt-4 mb-2">Key Roles and Contributions</div>
+    <ul class="ml-2">
+        {responsibilities.map(responsibility => (
+            <li class="m-0 flex p-0">
+              <span>
+                <Icon class="w-[18px]" name="mdi:arrow-right-thin" />
+              </span>
+              <span class="ml-1">{responsibility}</span>
+            </li>
+          ))}
+    </ul>
+  }
+    {
+      projects && <Projects projects={projects}/>
+    }
+</div>

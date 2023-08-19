@@ -1,0 +1,32 @@
+---
+import Icon from "astro-icon"
+
+const { projects } = Astro.props
+---
+<div class="font-bold text-skin-accent mt-6 mb-2">Project Highlights</div>
+
+<ul class="ml-2">
+{
+projects && projects.map((proj, index) =>
+    <li class="mb-4">
+        <span class="font-bold">{index + 1}.</span><span class="ml-1 font-bold">{proj.name}</span>
+        <ul class="ml-4">
+            <li class="flex"><span><Icon name="radix-icons:dot-filled" /></span>{proj.brief}</li>
+            <li><Icon name="radix-icons:dot-filled" />Responsibilities:
+                <ul class="ml-8">
+                {
+                    proj.responsibilities.map(responsibility =>
+                    <li class="m-0 flex p-0">
+                        <span>
+                            <Icon class="w-[18px]" name="mdi:arrow-right-thin" />
+                        </span>
+                        <span class="ml-1">{responsibility}</span>
+                    </li>)
+                
+                }
+                </ul>
+            </li>
+        </ul>
+    </li>)
+}
+</ul>

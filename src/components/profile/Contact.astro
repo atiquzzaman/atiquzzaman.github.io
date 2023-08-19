@@ -1,0 +1,45 @@
+---
+import Icon from "astro-icon";
+const {contact, social} = Astro.props;
+---
+
+<div class="border-skin-line border-t"></div>
+<ul class="py-4">
+<li>
+    <a href={`tel:${contact.phone}`}>
+        <Icon name="mdi:phone"/>
+        <span>{contact.phone}</span>
+    </a>
+</li>
+<li>
+    <a href={`mailto:${contact.email}`}>
+        <Icon name="mdi:email"/>
+        <span>{contact.email}</span>
+    </a>
+</li>
+<li>
+    <a href={`https://www.google.com/maps/search/?api=1&${contact.location}`} target="_blank">
+        <Icon name="mdi:location"/>
+        <span>{contact.location}</span>
+    </a>
+</li>
+<li>
+    <a target="_blank" href={social.web.url}>
+        <Icon name="mdi:web" />
+        <span>{social.web.alt}</span>
+    </a>
+</li>
+<li>
+    <a target="_blank" href={social.github.url}>
+        <Icon name="mdi:github" />
+        <span>{social.github.alt}</span>
+    </a>
+</li>
+<li>
+    <a target="_blank" href={social.linkedin.url}>
+        <Icon name="mdi:linkedin" />
+        <span>{social.linkedin.alt}</span>
+    </a>
+</li>
+</ul>
+<div class="border-skin-line border-t hidden sm:block"></div>
